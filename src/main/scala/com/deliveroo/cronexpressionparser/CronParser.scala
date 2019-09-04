@@ -36,6 +36,8 @@ object CronParser {
   }
 
   def cronTabExpression(timeExpression: String): Either[ParserError, Cron] = {
+    import com.cronutils.parser.CronParser
+
     val cronDefinition = CronDefinitionBuilder.instanceDefinitionFor(CronType.UNIX)
     val parser = new CronParser(cronDefinition)
     try {
