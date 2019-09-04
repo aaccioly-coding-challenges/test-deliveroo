@@ -11,7 +11,11 @@ lazy val root = (project in file("."))
     maintainer := "a.accioly@7rtc.com",
     name := "Cron Expression Parser",
     description := "Technical Task - Cron Expression Parser",
-    libraryDependencies += scalaTest % Test
+    libraryDependencies ++= Seq(
+      cronUtils,
+      logback,
+      scalaTest % Test
+    )
   )
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
