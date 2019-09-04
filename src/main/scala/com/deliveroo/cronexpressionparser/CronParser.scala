@@ -2,7 +2,6 @@ package com.deliveroo.cronexpressionparser
 
 import com.cronutils.model.definition.CronDefinitionBuilder
 import com.cronutils.model.{Cron, CronType}
-import com.cronutils.parser.CronParser
 import com.deliveroo.cronexpressionparser.ParserError.{InvalidNumberOfArguments, InvalidTimeExpression, ParserError, UnknownError}
 
 object CronParser {
